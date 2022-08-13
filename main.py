@@ -1,4 +1,5 @@
 #html web scraper of valorant tracker.gg profile that presents games played and hours by category, along with the sum totals
+#made by Sung Mo Yang
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -8,7 +9,6 @@ import os, sys
 
 username = None
 username = gui.prompt("Please enter your RIOT ID and tagline\n\n (EX: jett#1234)", "Hours Playing Valorant via Tracker.gg", "")
-#username = "SunBoDi#PIZZA"
 
 if username == None:
     quit()
